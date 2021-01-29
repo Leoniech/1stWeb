@@ -2,7 +2,7 @@ var rb1   = document.getElementById('usd');
 var rb2   = document.getElementById('lbp');
 
 function getWkData(){
-    fetch('http://localhost:3000/Alcohol')
+    fetch('https://lit-wave-12091.herokuapp.com/Alcohol')
   .then(response => response.json())
   .then(json => {
      var myul = document.getElementById('wk');
@@ -40,7 +40,7 @@ function getWkData(){
 }
 
 function getWnData(){
-    fetch('http://localhost:3000/Alcohol')
+    fetch('https://lit-wave-12091.herokuapp.com/Alcohol')
   .then(response => response.json())
   .then(json => {
      var myul = document.getElementById('wn');
@@ -77,7 +77,7 @@ function getWnData(){
 }
 
 function getVData(){
-    fetch('http://localhost:3000/Alcohol')
+    fetch('https://lit-wave-12091.herokuapp.com/Alcohol')
   .then(response => response.json())
   .then(json => {
      var myul = document.getElementById('v');
